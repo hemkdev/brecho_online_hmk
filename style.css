@@ -107,7 +107,7 @@ section {
 .carousel {
     display: flex;
     overflow: hidden;
-    width: 30 px;
+    width: 50 px;
 }
 
 .carousel img {
