@@ -115,3 +115,6 @@ section {
     transition: transform 1s ease-in-out;
 }
 
+.container {
+    max-width: 660px;
+    margin: 0 auto;
