@@ -6,6 +6,63 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <div class="conteudo">
+                <h2>Sobre Nós</h2>
+                <p>A melhor pastelaria da região desde 1998</p>
+            </div>
+            <div class="imagem">
+                <img src="https://staticr1.blastingcdn.com/media/photogallery/2017/6/3/660x290/b_1200x675x82/que-tal-almocar-no-o-senhor-dos-pasteis-fotoreproducaotwitter_1365515.jpg">
+            </div>
+        </section>
+
+        <section id="cardapio">
+            <div class="card-produto">
+                <h3>Pastel de Carne</h3>
+                <p>Delicioso pastel com carne moída temperada</p>
+            </div>
+            <div class="card-produto">
+                <h3>Pastel de Queijo</h3>
+                <p>Pastel gratinado com queijo derretido</p>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="info-contato">
+                <h4>Telefone:</h4>
+                <p>(11) 9999-9999</p>
+            </div>
+            <div class="info-contato">
+                <h4>Endereço:</h4>
+                <p>Rua dos Pastéis, 123 - Centro</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2024 O Senhor dos Pastéis - Todos os direitos reservados para Turma DS23 M6</p>
+    </footer>   
+
+
+    <form action="#" method="post">
+    <label for="nome"> Nome: </label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email"> E-mail </label>
+    <input type="email" id="email" name="email" required>
+
+    <button type="submit"> Enviar </button>
+</form>   
 </body>
 </html>
