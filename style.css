@@ -113,5 +113,10 @@ section {
 .carousel img {
     width: 100%;
     transition: transform 1s ease-in-out;
+    
+}
+
+.carousel img a:hover {
+    rotate: 360;
 }
 
