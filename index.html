@@ -1,176 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Brechó MiCansei</title>
+    <title>Brechó MiCansei</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
+
+    <nav class="navbar">
+
+     <ul>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#catálogo">Catálogo de Roupas</a></li>
+          <li><a href="#contato">Contato</a></li>
+    </ul>
+
+    </nav>
+
+<header>
+
+   
+</header>
+
 <body>
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#sobre">Produtos</a></li>
-                <li><a href="#cardapio">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="logo">
-            <img src="/roupas/AXEIAKI_BRECHÓ-removebg-preview.png" alt="">
+
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio1">
+
+            <div class="slide first">
+                <img src="https://acdn-us.mitiendanube.com/stores/004/496/521/products/camiseta-branca-milan-frente-f4777ac433c1aa2e7717393893778528-640-0.webp">
+                <img src="https://acdn-us.mitiendanube.com/stores/004/496/521/products/camiseta-vermelha-milan-frente-f78d81dc74b1d84e5a17393891577811-640-0.webp">
+                <img src="https://acdn-us.mitiendanube.com/stores/004/496/521/products/camiseta-vermelha-milan-frente-f78d81dc74b1d84e5a17393891577811-640-0.webp">
+            </div>
+
         </div>
-    </header>
+    </div>
 
-    <main> 
-        <section id="roupas">
-            <div class="conteudo">
-                <h2>Bem vindo ao nosso brechó</h2>
-                <p>As peças mais chaves de Joinville e região a preço de banana</p>
-            </div>           
+    <script>src="script.js"</script>
+
+    <div class="container">
+        <section>
+            <div class="carousel">
+                <div class="carouselitem">
+            <div class="img flex">
+                <div class="imagem img">
+                <img src="https://acdn-us.mitiendanube.com/stores/004/496/521/products/camiseta-branca-milan-frente-f4777ac433c1aa2e7717393893778528-640-0.webp">
+                <div class="preço flex">
+                    <a href="camisa1.html"> Camisa Minacci x Take Off WHITE R$ 120,00</a>
                 </div>
-
-                
+            </div>
+            <div class="imagem img">
+                <img src="https://acdn-us.mitiendanube.com/stores/004/496/521/products/camiseta-vermelha-milan-frente-f78d81dc74b1d84e5a17393891577811-640-0.webp">
+                <div class="preço flex">
+                    <a href="camisa2.html"> Camisa Minacci x Take Off RED R$ 120,00</a>
+                </div>
             
-        </section>
-
-        <div class="carousel-container">
-            <div class="carousel">
-                <div class="card">
-                    <img src="roupas/anjuss.png" alt="Camisa Polo">
-                    <h3>Camisa Polo</h3>
-                    <p>Super boa de usar!</p>
-                    <p>Preço: R$ 500,00</p>
-                    <button>Comprar</button>
-                </div>
-                <div class="card">
-                    <img src="roupas/hering.png" alt="Camisa Branca Lisa">
-                    <h3>Camisa Branca Lisa</h3>
-                    <p>Leve e maleável.</p>
-                    <p>Preço: R$ 700,00</p>
-                    <button>Comprar</button>
-                </div>
-                <div class="card">
-                    <img src="roupas/panna2.png" alt="Camisa Amarela Lisa">
-                    <h3>Camisa Amarela Lisa</h3>
-                    <p>Leve e maleável.</p>
-                    <p>Preço: R$ 700,00</p>
-                    <button>Comprar</button>
-                </div>
-                <div class="card">
-                    <img src="roupas/snapper.png" alt="Camiseta Feminina Preta">
-                    <h3>Camiseta Feminina Preta</h3>
-                    <p>Leve e maleável.</p>
-                    <p>Preço: R$ 700,00</p>
-                    <button>Comprar</button>
-                </div>
-
-
             </div>
-            <div class="buttons">
-                <button onclick="prevSlide()">&#10094;</button>
-                <button onclick="nextSlide()">&#10095;</button>
+            <div class="imagem img">
+                <img src="https://acdn-us.mitiendanube.com/stores/004/496/521/products/camiseta-vermelha-milan-frente-f78d81dc74b1d84e5a17393891577811-640-0.webp">
+                <div class="preço flex">
+                    <a href="camisa2.html"> Camisa Minacci x Take Off RED R$ 120,00</a>
+                </div>
+            </div>
+    
             </div>
         </div>
-        
-        <script>
-            let index = 0;
-            const totalSlides = document.querySelectorAll('.card').length;
-            const carousel = document.querySelector('.carousel');
-    
-            function updateCarousel() {
-                const offset = -index * 25; 
-                carousel.style.transform = `translateX(${offset}%)`;
-            }
-    
-            function nextSlide() {
-                index = (index + 1) % totalSlides;
-                updateCarousel();
-            }
-    
-            function prevSlide() {
-                index = (index - 1 + totalSlides) % totalSlides;
-                updateCarousel();
-            }
-        </script>
-
-        <div class="carousel-container">
-            <div class="carousel">
-                <div class="card">
-                    <img src="roupas/anjuss.png" alt="Camisa Polo">
-                    <h3>Camisa Polo</h3>
-                    <p>Super boa de usar!</p>
-                    <p>Preço: R$ 500,00</p>
-                    <button>Comprar</button>
-                </div>
-                <div class="card">
-                    <img src="roupas/hering.png" alt="Camisa Branca Lisa">
-                    <h3>Camisa Branca Lisa</h3>
-                    <p>Leve e maleável.</p>
-                    <p>Preço: R$ 700,00</p>
-                    <button>Comprar</button>
-                </div>
-                <div class="card">
-                    <img src="roupas/panna2.png" alt="Camisa Amarela Lisa">
-                    <h3>Camisa Amarela Lisa</h3>
-                    <p>Leve e maleável.</p>
-                    <p>Preço: R$ 700,00</p>
-                    <button>Comprar</button>
-                </div>
-                <div class="card">
-                    <img src="roupas/snapper.png" alt="Camiseta Feminina Preta">
-                    <h3>Camiseta Feminina Preta</h3>
-                    <p>Leve e maleável.</p>
-                    <p>Preço: R$ 700,00</p>
-                    <button>Comprar</button>
-                </div>
-
-
-            </div>
-            <div class="buttons">
-                <button onclick="prevSlide()">&#10094;</button>
-                <button onclick="nextSlide()">&#10095;</button>
-            </div>
-        </div>
-        
-        <script>
-            let index = 0;
-            const totalSlides = document.querySelectorAll('.card').length;
-            const carousel = document.querySelector('.carousel');
-    
-            function updateCarousel() {
-                const offset = -index * 25; 
-                carousel.style.transform = `translateX(${offset}%)`;
-            }
-    
-            function nextSlide() {
-                index = (index + 1) % totalSlides;
-                updateCarousel();
-            }
-    
-            function prevSlide() {
-                index = (index - 1 + totalSlides) % totalSlides;
-                updateCarousel();
-            }
-        </script>
-
-        <section id="sobre">
-           <h2> Sobre nós </h2>
-            <p>MiCansei foi criado por Lucas Hemkemeier, Enzo Ronchi, Gabriel Rosa e Lucas Duarte</p>
         </section>
-    </main>
+      
+        
 
-    <footer class="rodape">
-        <p>&copy; 2025 Brechó online mais chave do mundo. Todos os direitos reservados</p>
-    </footer>   
-
-
-    <form action="#" method="post">
-    <label for="nome"> Nome: </label>
-    <input type="text" id="nome" name="nome" required>
-
-    <label for="email"> E-mail </label>
-    <input type="email" id="email" name="email" required>
-
-    <button type="submit"> Enviar </button>
-</form>   
 </body>
+
+<footer>
+    <div class="rodape">
+        <p>&copy; 2025 - Brechó Lukinhas - Todos os direitos reservados</p>
+    </div>
+</footer>
 </html>

@@ -1,26 +1,26 @@
-* {
+nav{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
 }
 
 body {
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    line-height: 2;
+    background-color: rgb(255, 255, 255);
 }
 
 .navbar {
-    background-color: #333;
-    padding: 2rem;
+    background-color: rgb(128, 0, 0);
+    padding: 16px;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 250px;
-
+    gap: 32px;
 }
 
 .navbar a {
@@ -30,36 +30,38 @@ body {
 }
 
 .navbar a:hover {
-    color: #ffd700;
+    color: rgb(255, 225, 0);
+
 }
 
-main {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+.rodape {
+    color: white;
+    background-color: rgb(128, 0, 0);
+    text-align: center;
+    padding: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-top: 32px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 section {
-    margin: 2rem 0;
-    padding: 2rem;
-    background-color: white;
+    margin: 32px 0;
+    padding: 32px;
+    background-color: white(128, 0, 0);
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.conteudo {
-    padding: 1rem;
-    border-bottom: 2px solid #ffffff;
-    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .imagem {
     width: 100%;
     max-width: 400px;
-    margin: 1rem auto;
     border-radius: 8px;
+    margin: 16px auto;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgb(0,0,0,0.5)
 }
 
 .imagem img {
@@ -68,40 +70,29 @@ section {
     display: block;
 }
 
-.rodape {
-    background-color: #333;
+.carouselitem {
+
+}
+
+.carousel {
+
+}
+
+.flex {
+    display: flex;
+    margin: 0px;
+    padding: 40px;
+}
+
+.preço {
     color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    line-height: 2;
+    background-color: rgb(131, 15, 15);
+    justify-content: center;
+    font-size: large;
 }
-
-#roupas {
-    border: 2px solid #ffffff;
+ 
+.preço a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
-
-#sobre h2 {
-    text-align: center;
-    color: rgb(0, 0, 0);
-}
-
-#sobre {
-    text-align: center;
-}
-
-.carousel img {
-    width: 100%;
-    transition: transform 1s ease-in-out;
-    
-}
-
-.carousel img a:hover {
-    rotate: 360;
-}
-
-.container {
-    max-width: 660px;
-    margin: 0 auto;
