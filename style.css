@@ -48,7 +48,7 @@ section {
 
 .conteudo {
     padding: 1rem;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid #ffffff;
     margin-bottom: 1rem;
 }
 
@@ -67,20 +67,6 @@ section {
     display: block;
 }
 
-.card-produto {
-    background-color: #fff9e6;
-    padding: 1.5rem;
-    margin: 1rem 0;
-    border-left: 4px solid #ffd700;
-}
-
-.info-contato {
-    background-color: #e6f3ff;
-    padding: 1.5rem;
-    margin: 1rem 0;
-    border-radius: 5px;
-}
-
 .rodape {
     background-color: #333;
     color: white;
@@ -92,16 +78,17 @@ section {
     width: 100%;
 }
 
+#roupas {
+    border: 2px solid #ffffff;
+}
+
+#sobre h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
 #sobre {
-    border: 2px solid #ffd700;
-}
-
-#cardapio h2 {
-    color: #c90;
-}
-
-#contato h2 {
-    color: #069;
+    text-align: center;
 }
 
 .carousel {
