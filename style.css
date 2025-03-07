@@ -157,3 +157,21 @@ section {
     height: 270px;
     max-width: fit-content;
 }
+
+#contato {
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+#formulario-contato {
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+}
