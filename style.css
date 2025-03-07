@@ -12,14 +12,15 @@ body {
 
 .navbar {
     background-color: #333;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 250px;
+
 }
 
 .navbar a {
@@ -118,3 +119,32 @@ section {
 .container {
     max-width: 660px;
     margin: 0 auto;
+
+}
+
+.logo {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 60px;
+    bottom: 100px;
+    
+}
+
+.logo img {
+    width: 200px;
+    height: 130px;
+    max-width: fit-content;
+}
+
+.foto {
+
+        list-style: none;
+        display: flex;
+        justify-content: left;
+        gap: 50px;
+        width: 100px;
+        position: relative;
+    
+}
+
