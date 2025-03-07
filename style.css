@@ -12,7 +12,7 @@ body {
 }
 
 .navbar {
-    background-color: rgb(128, 0, 0);
+    background-color: rgb(0, 0, 0);
     padding: 16px;
 }
 
@@ -30,13 +30,13 @@ body {
 }
 
 .navbar a:hover {
-    color: rgb(255, 225, 0);
+    color: rgb(228, 17, 17);
 
 }
 
 .rodape {
-    color: white;
-    background-color: rgb(128, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     text-align: center;
     padding: 16px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -50,7 +50,16 @@ section {
     padding: 32px;
     background-color: white(128, 0, 0);
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container h2 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: xx-large;
 }
 
 .imagem {
@@ -68,14 +77,6 @@ section {
     display: block;
 }
 
-.carouselitem {
-
-}
-
-.carousel {
-
-}
-
 .flex {
     display: flex;
     margin: 0px;
@@ -85,7 +86,7 @@ section {
 .preço {
     color: white;
     line-height: 2;
-    background-color: rgb(131, 15, 15);
+    background-color: rgb(0, 0, 0);
     justify-content: center;
     font-size: large;
 }
@@ -94,3 +95,50 @@ section {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
+
+.slider {
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slide img{
+    width: 600px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
