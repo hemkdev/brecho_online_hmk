@@ -30,20 +30,64 @@
         </section>
 
         <div class="carousel-container">
-            <div class="carousel" id="carousel">
-                <div class="carousel-item"><img src="roupas/anjuss.png" alt="Camisa Polo"><p>Camisa Polo - R$ 500,00</p></div>
-                <div class="carousel-item"><img src="roupas/minacci.png" alt="Camisa Branca Lisa"><p>Camisa Branca Lisa - R$ 700,00</p></div>
-                <div class="carousel-item"><img src="roupas/hering.png" alt="Camisa Amarela Lisa"><p>Camisa Amarela Lisa - R$ 700,00</p></div>
-                <div class="carousel-item"><img src="roupas/panna2.png" alt="Camiseta Feminina Preta"><p>Camiseta Feminina Preta - R$ 700,00</p></div>
-                <div class="carousel-item"><img src="roupas/snapper.png" alt="Casaco Masculino Preto"><p>Casaco Masculino Preto - R$ 700,00</p></div>
-                <div class="carousel-item"><img src="roupas/baggyjeans.png" alt="Camisa Masculina Preta"><p>Camisa Masculina Preta - R$ 700,00</p></div>
-                <div class="carousel-item"><img src="roupas/snapper.png" alt="Camisa Rosa Feminina"><p>Camisa Rosa Feminina - R$ 700,00</p></div>
+            <div class="carousel">
+                <div class="card">
+                    <img src="roupas/anjuss.png" alt="Camisa Polo">
+                    <h3>Camisa Polo</h3>
+                    <p>Super boa de usar!</p>
+                    <p>Preço: R$ 500,00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="roupas/hering.png" alt="Camisa Branca Lisa">
+                    <h3>Camisa Branca Lisa</h3>
+                    <p>Leve e maleável.</p>
+                    <p>Preço: R$ 700,00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="roupas/panna2.png" alt="Camisa Amarela Lisa">
+                    <h3>Camisa Amarela Lisa</h3>
+                    <p>Leve e maleável.</p>
+                    <p>Preço: R$ 700,00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="roupas/snapper.png" alt="Camiseta Feminina Preta">
+                    <h3>Camiseta Feminina Preta</h3>
+                    <p>Leve e maleável.</p>
+                    <p>Preço: R$ 700,00</p>
+                    <button>Comprar</button>
+                </div>
+
+
             </div>
-            <div class="carousel-controls">
-                <button onclick="moveSlide(-1)">&#10094;</button>
-                <button onclick="moveSlide(1)">&#10095;</button>
+            <div class="buttons">
+                <button onclick="prevSlide()">&#10094;</button>
+                <button onclick="nextSlide()">&#10095;</button>
             </div>
         </div>
+        
+        <script>
+            let index = 0;
+            const totalSlides = document.querySelectorAll('.card').length;
+            const carousel = document.querySelector('.carousel');
+    
+            function updateCarousel() {
+                const offset = -index * 25; 
+                carousel.style.transform = `translateX(${offset}%)`;
+            }
+    
+            function nextSlide() {
+                index = (index + 1) % totalSlides;
+                updateCarousel();
+            }
+    
+            function prevSlide() {
+                index = (index - 1 + totalSlides) % totalSlides;
+                updateCarousel();
+            }
+        </script>
 
         <section id="cardapio">
             <div class="card-produto">
