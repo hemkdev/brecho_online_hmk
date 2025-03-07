@@ -28,20 +28,69 @@
             </div>           
                 </div>
 
-                <div class="carousel">
-                    <div class="container"
-                    <a href="style.css">
-                        <img src="roupas/anjuss.png" alt="Imagem 1">
-                    </a>
-                    <a href="seu-link2">
-                        <img src="roupas/baggyjeans.png" alt="Imagem 2">
-                    </a>
-                    <a href="seu-link3">
-                        <img src="roupas/panna2.png" alt="Imagem 3">
-                    </a>
-                </div>
+                
             
         </section>
+
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="card">
+                    <img src="roupas/anjuss.png" alt="Camisa Polo">
+                    <h3>Camisa Polo</h3>
+                    <p>Super boa de usar!</p>
+                    <p>Preço: R$ 500,00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="roupas/hering.png" alt="Camisa Branca Lisa">
+                    <h3>Camisa Branca Lisa</h3>
+                    <p>Leve e maleável.</p>
+                    <p>Preço: R$ 700,00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="roupas/panna2.png" alt="Camisa Amarela Lisa">
+                    <h3>Camisa Amarela Lisa</h3>
+                    <p>Leve e maleável.</p>
+                    <p>Preço: R$ 700,00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="roupas/snapper.png" alt="Camiseta Feminina Preta">
+                    <h3>Camiseta Feminina Preta</h3>
+                    <p>Leve e maleável.</p>
+                    <p>Preço: R$ 700,00</p>
+                    <button>Comprar</button>
+                </div>
+
+
+            </div>
+            <div class="buttons">
+                <button onclick="prevSlide()">&#10094;</button>
+                <button onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+        
+        <script>
+            let index = 0;
+            const totalSlides = document.querySelectorAll('.card').length;
+            const carousel = document.querySelector('.carousel');
+    
+            function updateCarousel() {
+                const offset = -index * 25; 
+                carousel.style.transform = `translateX(${offset}%)`;
+            }
+    
+            function nextSlide() {
+                index = (index + 1) % totalSlides;
+                updateCarousel();
+            }
+    
+            function prevSlide() {
+                index = (index - 1 + totalSlides) % totalSlides;
+                updateCarousel();
+            }
+        </script>
 
         <section id="cardapio">
             <div class="card-produto">

@@ -105,12 +105,6 @@ section {
     color: #069;
 }
 
-.carousel {
-    display: flex;
-    overflow: hidden;
-    width: 50 px;
-}
-
 .carousel img {
     width: 100%;
     transition: transform 1s ease-in-out;
@@ -119,32 +113,3 @@ section {
 .container {
     max-width: 660px;
     margin: 0 auto;
-
-}
-
-.logo {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    left: 60px;
-    bottom: 100px;
-    
-}
-
-.logo img {
-    width: 200px;
-    height: 130px;
-    max-width: fit-content;
-}
-
-.foto {
-
-        list-style: none;
-        display: flex;
-        justify-content: left;
-        gap: 50px;
-        width: 100px;
-        position: relative;
-    
-}
-
