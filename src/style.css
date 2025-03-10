@@ -96,20 +96,50 @@ section {
     text-decoration: none;
 }
 
-.logo {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    left: 80px;
-    bottom: 190px;
-
+.slider {
+    margin: 0 auto;
+    width: 700px;
+    height: 600px;
+    overflow: hidden;
 }
 
-.logo img {
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
 
-    width: 270px;
-    height: 270px;
-    max-width: fit-content;
+.slides input {
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slide img{
+    width: 600px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
 }
 
 #contato {
@@ -130,54 +160,13 @@ section {
     background-color: rgb(0, 0, 0);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .container-slider {
+.logo {
     display: flex;
-    width: 100%;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .container-images {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 700px;
-  }
-  
-  .slider {
-    opacity: 0;
-    transition: opacity .2s;
     position: absolute;
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .on {
-    opacity: 1;
-  }
-  
-  #prev-button, #next-button {
-    width: 30px;
-    height: 30px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-  }
-  
-  #prev-button img, #next-button img {
-    width: 100%;
-    height: 100%;
-  }
-  
-  #prev-button {
-    transform: rotate(180deg);
-  }
+    width: 200px;
+    height: 100px;
+    left: 20px;
+    top: 10px;
+
+}
+
