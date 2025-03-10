@@ -96,52 +96,6 @@ section {
     text-decoration: none;
 }
 
-.slider {
-    margin: 0 auto;
-    width: 700px;
-    height: 600px;
-    overflow: hidden;
-}
-
-.slides {
-    width: 400%;
-    height: 400px;
-    display: flex;
-}
-
-.slides input {
-    display: none;
-}
-
-.slide{
-    width: 25%;
-    position: relative;
-}
-
-.slide img{
-    width: 600px;
-}
-
-.manual-navigation{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn{
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.manual-btn:not(:last-child) {
-    margin-right: 40px;
-}
-
 .logo {
     position: relative;
     width: 100px;
